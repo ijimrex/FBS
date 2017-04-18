@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51EECCB1EA5E6820091572A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51EECCA1EA5E6820091572A /* SWRevealViewController.m */; };
 		B539B0C11EA4938900076DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539B0C01EA4938900076DD7 /* AppDelegate.swift */; };
 		B539B0C31EA4938900076DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539B0C21EA4938900076DD7 /* ViewController.swift */; };
 		B539B0C61EA4938900076DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B539B0C41EA4938900076DD7 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B51EECC81EA5E6820091572A /* FBS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBS-Bridging-Header.h"; sourceTree = "<group>"; };
+		B51EECC91EA5E6820091572A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B51EECCA1EA5E6820091572A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B539B0BD1EA4938900076DD7 /* FBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B539B0C01EA4938900076DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B539B0C21EA4938900076DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +106,10 @@
 				B539B0C41EA4938900076DD7 /* Main.storyboard */,
 				B539B0C71EA4938900076DD7 /* Assets.xcassets */,
 				B539B0C91EA4938900076DD7 /* LaunchScreen.storyboard */,
+				B51EECC91EA5E6820091572A /* SWRevealViewController.h */,
+				B51EECCA1EA5E6820091572A /* SWRevealViewController.m */,
 				B539B0CC1EA4938900076DD7 /* Info.plist */,
+				B51EECC81EA5E6820091572A /* FBS-Bridging-Header.h */,
 			);
 			path = FBS;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 					B539B0BC1EA4938800076DD7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6A3J2ETL67;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B539B0D01EA4938900076DD7 = {
@@ -264,6 +272,7 @@
 			files = (
 				B539B0C31EA4938900076DD7 /* ViewController.swift in Sources */,
 				B539B0C11EA4938900076DD7 /* AppDelegate.swift in Sources */,
+				B51EECCB1EA5E6820091572A /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6A3J2ETL67;
 				INFOPLIST_FILE = FBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FBS/FBS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,11 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6A3J2ETL67;
 				INFOPLIST_FILE = FBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FBS/FBS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,6 +528,7 @@
 				B539B0E71EA4938900076DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B539B0E81EA4938900076DD7 /* Build configuration list for PBXNativeTarget "FBSTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +537,7 @@
 				B539B0EA1EA4938900076DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B539B0EB1EA4938900076DD7 /* Build configuration list for PBXNativeTarget "FBSUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +546,7 @@
 				B539B0ED1EA4938900076DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
